@@ -1,0 +1,137 @@
+    1  docker version
+    2  docker run --name webserver --memory="128m" -d -p 8080:80 nginx
+    3  ipa
+    4  git clone https://github.com/sandervanvugt/kcna.git
+    5  cat dockerfile/Dockerfile 
+    6  docker build -t nmap .
+    7  sudo nano Dockerfile 
+    8  docker build -t nmap .
+    9  docker run --rm -it nmap
+   10  docker run -it nmap
+   11  docker run -it nmap sh
+   12  docker run -it nginx sh
+   13  docker tag nmap nmap:0.1
+   14  docker images ls
+   15  docker images -ls
+   16  docker images ls
+   17  docker image ls
+   18  docker image -h
+   19  docker history nmap
+   20  cat sander.repo 
+   21  docker ps -al
+   22  docker exec -help
+   23  docker commit -help
+   24  docker exec -it webserver /bin/bash
+   25  docker commit webserver nginx-with-ubuntu
+   26  docker tag nginx-with-ubuntu yourname/nginx-with-ubuntu:latest
+   27  docker tag nginx-with-ubuntu mehdi/nginx-with-ubuntu:latest
+   28  docker ps -a | grep nginx
+   29  docker update --restart unless-stopped webserver
+   30  docker inspect -f '{{.HostConfig.RestartPolicy.Name}}' webserver
+   31  nano ~/.bashrc
+   32  echo $HISTSIZE
+   33  echo $HISTFILESIZE
+   34  nano ~/.bashrc
+   35  echo $HISTFILESIZE
+   36  echo $HISTSIZE
+   37  docker ver
+   38  docker version
+   39  sudo usermod -aG docker $USER
+   40  docker version
+   41  sudo usermod -aG docker docker1
+   42  docker version
+   43  newgrp docker
+   44  newgrp docker
+   45  docker -ps
+   46  docker save -i friendly.tar mehdi/nginx-with-ubuntu
+   47  docker save -help
+   48  docker save --help
+   49  docker save -i friendly.tar mehdi
+   50  docker save -o friendly.tar mehdi/nginx-with-ubuntu
+   51  cat friendly.tar 
+   52  tar tvf friendly.tar 
+   53  ping 192.168.1.175
+   54  scp friendly.tar splunkserver@192.168.1.175:home/splunkserver
+   55  scp friendly.tar splunkserver@192.168.1.175:/home/splunkserver
+   56  curl localhost:80
+   57  curl localhost
+   58  curl localhost:8080
+   59  docker exec -it webserver bash
+   60  docker save mehdi/nginx-with-ubuntu:latest -o nginx_with_ubuntu.tar
+   61  scp nginx_with_ubuntu.tar splunkserver@192.168.1.175:/tmp/
+   62  docker run -d -p 5000:5000 --restart=always --name registry registry:latest
+   63  curl localhost:5000
+   64  docker tag fedora:latest localhost:5000/myfedora
+   65  docker images | grep fed
+   66  docker push localhost:5000/myfedora
+   67  docker rm fedora
+   68  docker pull localhost:5000/myfen
+   69  docker pull localhost:5000/myfedo
+   70  docker pull localhost:5000/myfedora
+   71  docker run -d -p 5000:5000 --restart=always --name registry   -v /opt/registry/data:/var/lib/registry registry:latest
+   72  docker stop registry
+   73  docker rm registry
+   74  sudo cat /var/lib/docker/
+   75  sudo cd /var/lib/docker/
+   76  sudo -i
+   77  cd /var/lib/docker/
+   78  sudo du -sh /opt/registry/data
+   79  docker run -d -p 5000:5000 --restart=always --name registry -v /opt/registry/data:/var/lib/registry registry:latest
+   80  cd /opt/registry/data/
+   81  cd
+   82  docker rmi localhost:5000/myfedora:latest 
+   83  docker pull fedora
+   84  docker tag fedora:latest localhost:5000/myfedora:1.0
+   85  docker push localhost:5000/myfedora:1.0
+   86  docker ps
+   87  dpcker rmi fedor
+   88  docker rmi fed
+   89  docker rmi fedora:latest 
+   90  docker images
+   91  docker ps -a
+   92  docker system df
+   93  ip a
+   94  cd kcna/
+   95  cd dockerfile/
+   96  lks
+   97  ks
+   98  cat Dockerfile 
+   99  git config --global user.name "Mehdi487"
+  100  git config --global user.email "mehdifarhadi487@gmail.com"
+  101  cat .git/
+  102  cd .git/
+  103  cat info/
+  104  cat index 
+  105  cd ..
+  106  cp kcna/ mynewrepo
+  107  mkdir mynewrepo
+  108  cp kcna/* mynewrepo/
+  109  cp -r kcna/* mynewrepo/
+  110  cd mynewrepo/
+  111  ll
+  112  git init
+  113  git branch -m main
+  114  git remote add origin git@github.com:Mehdi487/mynewrepo.git
+  115  git commit -m "Initial commit from Ubuntu"
+  116  git add .
+  117  ssh-keygen -t ed25519 -C "mehdifarhadi487@gmail.com"
+  118  rm ~/yes ~/yes.pub
+  119  ssh-keygen -t ed25519 -C "mf@gmail.com" -f ~/.ssh/id_ed25519
+  120  ssh-keygen -t ed25519 -C "mehdifarhadi487@gmail.com" -f ~/.ssh/id_ed25519
+  121  git remote -v
+  122  cat ~/.ssh/id_ed25519.pub
+  123  eval "$(ssh-agent -s)"
+  124  ssh-add ~/.ssh/id_ed25519
+  125  ssh -T git@github.com
+  126  git pull origin main --allow-unrelated-histories
+  127  git push -u origin main
+  128  git push -u origin main --force
+  129  ls
+  130  nano README.md
+  131  git add README.md
+  132  git commit -m "Update README with new info"
+  133  git push origin main
+  134  git pull origin main
+  135  cat README.md 
+  136  history 
+  137  history  > 08-10.txt
